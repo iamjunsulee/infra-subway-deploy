@@ -41,7 +41,7 @@ shutDownProcess() {
   if [ -n "${PID}" ]
   then
       echo -e "${txtred}>> KILL PID(${PID}) 🚫 ${txtrst}"
-      kill -9 "${PID}"
+      kill -15 "${PID}"
   fi
 }
 
